@@ -15,9 +15,10 @@
     width: 100%;
     height: 60px;
     justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 300;
-
+    top: 0;
 }
 
 .header_container {
@@ -26,6 +27,35 @@
     height: 100%;
     justify-content: space-between;
 
+}
+
+.menu-hamburgesa {
+    width: 100%;
+    text-align: end;
+    position: absolute;
+}
+
+.menu-hamburgesa-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.menu-hamburgesa-btn:hover {
+    color: white;
+
+}
+
+.menu-hamburgesa-ul {
+    width: 100%;
+}
+
+.menu-hamburgesa-ul li:last-child a {
+    color: green;
+}
+
+.nav {
+
+    display: none;
 }
 
 .nav_img {
@@ -55,10 +85,16 @@
     font-size: 12px;
 }
 
+.nav_ul li:last-child {
+
+    color: rgb(5, 152, 5);
+}
+
 .section_portada_container {
     height: 100vh;
     justify-content: end;
     display: flex;
+    margin-top: 60px;
 
 }
 
@@ -99,18 +135,38 @@
 }
 
 .section_portada_descripcion_button {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
 }
 
-.section_portada_descripcion_button_1,
+.section_portada_descripcion_button_1 {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin: 3px;
+}
+
 .section_portada_descripcion_button_2 {
-    width: 25%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    font-size: 17px;
+    height: 40px;
+    width: 200px;
+    margin: 3px;
 }
 
 
 .section_card {
-    text-align: center; 
+    text-align: center;
     height: auto;
     margin-top: 10px;
     font-family: var(--font);
@@ -126,7 +182,7 @@
     margin: 2px 5px 2px 5px;
     border: 1px solid rgb(207, 206, 206);
     border-radius: 3px;
-    height: 440px;
+    height: 100%;
     width: 350px;
 }
 
@@ -141,16 +197,19 @@
     height: 25%;
     padding: 10px;
 }
-.card_detalle h6{
+
+.card_detalle h6 {
     margin-bottom: 5px;
-  }
-.card_detalle_span_js{
-    background-color: yellow;
-   border-radius: 5px;
-   padding: 4px;
-   font-size: 9px;
 }
-.card_detalle_span_rjs{
+
+.card_detalle_span_js {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 9px;
+}
+
+.card_detalle_span_rjs {
     background-color: rgb(53, 146, 177);
     color: white;
     border-radius: 5px;
@@ -158,10 +217,26 @@
     font-size: 9px;
 }
 
-.card_lorem{
+.card_detalle_span_Negocios {
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 9px;
+}
+
+.card_detalle_span_Startaps {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 9px;
+}
+
+.card_lorem {
     font-size: 9px;
     padding: 5px 5px 5px 0;
-  color: rgb(106, 105, 105);
+    color: rgb(106, 105, 105);
 }
 
 .section_card_end {
@@ -208,9 +283,46 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 10px;
 }
 
-.section_form {
+.section_form_encabezado {
+    text-align: center;
+}
+
+.section_form_encabezado h6 {
+    color: gray;
+}
+
+.section_form_encabezado p {
+    font-size: 12px;
+}
+
+.section_form_button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(150, 201, 62);
+    ;
+    color: white;
+    border: 1px solid rgb(150, 201, 62);
+    ;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.p-href-from a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: inherit;
+
+}
+
+.p-form-button {
+    font-size: 10px;
+    color: gray;
+}
+
+/* .section_form {
     text-align: center;
     width: 40%;
     min-width: 300px
@@ -223,17 +335,15 @@
     resize: vertical;
     min-height: 80px;
 
-}
+} */
 
-.section_form_button {
-    width: 100%;
-}
 
-.form_input {
+
+/* .form_input {
     width: 49.6%;
     min-width: 300px
 }
-
+ */
 .footer {
     background-color: rgb(28, 54, 67);
     background: linear-gradient(90deg, rgba(28, 54, 67, 1) 0%, rgba(30, 83, 113, 1) 100%);
@@ -260,7 +370,19 @@
     font-family: var(--font);
 }
 
+@media (min-width: 992px) {
+    .menu-hamburgesa {
+        display: none;
+    }
+
+    .nav {
+
+        display: block;
+    }
+}
+
 @media (max-width: 775px) {
+
 
     .cards {
         display: flex;

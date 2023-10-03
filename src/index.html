@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/src/public/index.css" />
+    <script src="https://kit.fontawesome.com/1d5f6d8bfd.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
     <main class="main">
+
         <header class="header">
+
+            </div>
             <div class="header_container">
                 <div class="nav_img">
                     <img src="/src/public/img/codoacodo.png" alt="" />
                     <p>Conf Bs As</p>
                 </div>
+
                 <nav class="nav">
                     <ul class="nav_ul">
                         <li>La conferencia</li>
@@ -30,7 +32,19 @@
                     </ul>
                 </nav>
             </div>
+            <div class="dropdown menu-hamburgesa">
+                <button class="btn menu-hamburgesa-btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </button>
+                <ul class="dropdown-menu menu-hamburgesa-ul dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">La conferencia</a></li>
+                    <li><a class="dropdown-item" href="#">Los oradores</a></li>
+                    <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
+                    <li><a class="dropdown-item" href="#">Conviértete en orador</a></li>
+                    <li><a class="dropdown-item" href="#">Comprar tickets</a></li>
 
+                </ul>
+            </div>
         </header>
         <section class="section_portada_container">
             <div class="section_portada_img">
@@ -46,8 +60,8 @@
                     esperamos!
                 </p>
                 <div class="section_portada_descripcion_button">
-                    <button class="section_portada_descripcion_button_1">1</button>
-                    <button class="section_portada_descripcion_button_2">2</button>
+                    <button class="section_portada_descripcion_button_1">Quiero ser orador</button>
+                    <button class="section_portada_descripcion_button_2">Comprar tickets</button>
                 </div>
             </div>
         </section>
@@ -65,8 +79,10 @@
                             <span class="card_detalle_span_rjs">React</span>
                         </h6>
                         <h5>Steve Jobs</h5>
-                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam obcaecati veritatis voluptate?
-                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum reiciendis, tenetur
+                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam
+                            obcaecati veritatis voluptate?
+                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum
+                            reiciendis, tenetur
                             consequuntur.</p>
                     </div>
                 </div>
@@ -78,18 +94,26 @@
                             <span class="card_detalle_span_rjs">React</span>
                         </h6>
                         <h5>Bill Gates</h5>
-                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam obcaecati veritatis voluptate?
-                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum reiciendis, tenetur
+                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam
+                            obcaecati veritatis voluptate?
+                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum
+                            reiciendis, tenetur
                             consequuntur.
-                          </p>
+                        </p>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card_img" alt="" src="/src/public/img/ada.jpeg" />
                     <div class="card_detalle">
+                        <h6>
+                            <span class="card_detalle_span_Negocios">Negocios</span>
+                            <span class="card_detalle_span_Startaps">Startaps</span>
+                        </h6>
                         <h5>Ada Lovelace</h5>
-                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam obcaecati veritatis voluptate?
-                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum reiciendis, tenetur
+                        <p class="card_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quisquam
+                            obcaecati veritatis voluptate?
+                            Eos nisi asperiores obcaecati accusamus cupiditate doloremque ipsa excepturi laborum
+                            reiciendis, tenetur
                             consequuntur.</p>
                     </div>
                 </div>
@@ -112,25 +136,38 @@
                 </div>
         </section>
         <section class="section_form_container">
-            <div class="section_form">
 
-                <div class="section_form_encabezado">
-                    <p>Lorem, ipsum.</p>
-                    <h1>ORADOR</h1>
-                    <p>Lorem ipsum <a href="#">dolor</a> sit amet..</p>
+            <div class="col-6">
+                <div class="section_form_encabezado ">
+                    <h6>conviértete en un</h6>
+                    <h3>ORADOR</h3>
+                    <p class="p-href-from">Anótate como orador para dar una <a href="#">charla ignite</a>. Cuéntanos de
+                        qué quieres hablar!
+                    </p>
                 </div>
+                <div class="d-flex col-6">
 
-                <form class="form" action="#">
-                    <input class="form_input" type="text" placeholder="nombre">
-                    <input class="form_input" type="text" placeholder="apellido">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="sabr que quieres hablar"></textarea>
-                    <p>recuenda incluir un titulo para tu charla</p>
-                    <button class="section_form_button">enviar</button>
-                </form>
+
+                    <div class=" col-12 ">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class=" col-12">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Sobre qué quieres hablar?"></textarea>
+                </div>
+                <p class="p-form-button">Recuerda incluir un titulo para tu charla </i></p>
+                <button class="section_form_button">Enviar</button>
+            </div>
             </div>
         </section>
     </main>
     <footer class="footer">
+
         <ul class="footer_ul">
             <li><a href="#">Preguntas frecuentes</a></li>
             <li><a href="#">Contáctanos</a></li>
@@ -141,6 +178,8 @@
             <li><a href="#">Estudiantes</a></li>
         </ul>
     </footer>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
