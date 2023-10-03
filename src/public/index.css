@@ -246,6 +246,7 @@ section[id] {
 
 .section_card-encabezado p {
     margin: 0;
+    color: gray
 }
 
 .cards {
@@ -279,7 +280,7 @@ section[id] {
 }
 
 .card_detalle_span_js {
-    background-color: yellow;
+    background-color: rgb(240, 209, 33);
     border-radius: 5px;
     padding: 4px;
     font-size: 9px;
@@ -332,7 +333,7 @@ section[id] {
     width: 50%;
     justify-content: center;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
@@ -367,7 +368,7 @@ section[id] {
 }
 
 .section_form_encabezado h6 {
-    color: black;
+    color: gray;
     font-size: 10px;
 }
 
