@@ -18,17 +18,19 @@
             </div>
             <div class="header_container">
                 <div class="nav_img">
-                    <img src="/src/public/img/codoacodo.png" alt="" />
-                    <p>Conf Bs As</p>
+                    <a href="#conferencia"><img src="/src/public/img/codoacodo.png" alt="" /></a>
+                    <div>
+                        <a href="#conferencia"> Conf Bs As</a>
+                    </div>
                 </div>
 
                 <nav class="nav">
                     <ul class="nav_ul">
-                        <li>La conferencia</li>
-                        <li>Los oradores</li>
-                        <li>El lugar y la fecha</li>
-                        <li>Conviértete en orador</li>
-                        <li>Comprar tickets</li>
+                        <li><a href="#conferencia">La conferencia</a></li>
+                        <li><a href="#oradores">Los oradores</a></li>
+                        <li><a href="#lugar-fecha">El lugar y la fecha</a></li>
+                        <li><a href="#orador">Conviértete en orador</a></li>
+                        <li><a href="#tickets">Comprar tickets</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,21 +39,21 @@
                     <i class="fa-solid fa-bars fa-lg"></i>
                 </button>
                 <ul class="dropdown-menu menu-hamburgesa-ul dropdown-menu-dark">
-                    <li><a class="dropdown-item active" href="#">La conferencia</a></li>
-                    <li><a class="dropdown-item" href="#">Los oradores</a></li>
-                    <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
-                    <li><a class="dropdown-item" href="#">Conviértete en orador</a></li>
-                    <li><a class="dropdown-item" href="#">Comprar tickets</a></li>
+                    <li><a class="dropdown-item " href="#conferencia">La conferencia</a></li>
+                    <li><a class="dropdown-item" href="#oradores">Los oradores</a></li>
+                    <li><a class="dropdown-item" href="#lugar-fecha">El lugar y la fecha</a></li>
+                    <li><a class="dropdown-item" href="#orador">Conviértete en orador</a></li>
+                    <li><a class="dropdown-item" href="#tickets">Comprar tickets</a></li>
 
                 </ul>
             </div>
         </header>
-        <section class="section_portada_container">
+        <section class="section_portada_container" id="conferencia">
             <div class="section_portada_img">
 
             </div>
             <div class="section_portada_descripcion">
-
+                <h2>Conf Bs As</h2>
                 <p>Bs As llega por primera vez a Argentina. Un evento
                     para compartir con nuestra comunidad el conocimiento y
                     experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
@@ -60,15 +62,16 @@
                     esperamos!
                 </p>
                 <div class="section_portada_descripcion_button">
-                    <button class="section_portada_descripcion_button_1">Quiero ser orador</button>
-                    <button class="section_portada_descripcion_button_2">Comprar tickets</button>
+                    <button class="section_portada_descripcion_button_1"><a href="#orador">Quiero ser
+                            orador</a></button>
+                    <button class="section_portada_descripcion_button_2"><a href="#tickets">Comprar tickets</a></button>
                 </div>
             </div>
         </section>
-        <section class="section_card">
-            <div>
+        <section class="section_card" id="oradores">
+            <div class="section_card-encabezado">
                 <p>conoce a los</p>
-                <h1>ORADORES</h1>
+                <h3>ORADORES</h3>
             </div>
             <div class="cards">
                 <div class="card">
@@ -119,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="section_card_end">
+        <section class="section_card_end" id="lugar-fecha">
             <div class="card_end">
                 <div class="card_img_end">
                 </div>
@@ -135,7 +138,7 @@
                     <button class="card_button_end">Conocé más</button>
                 </div>
         </section>
-        <section class="section_form_container">
+        <section class="section_form_container" id="orador">
 
             <div class="col-6">
                 <div class="section_form_encabezado ">
@@ -161,12 +164,12 @@
                         placeholder="Sobre qué quieres hablar?"></textarea>
                 </div>
                 <p class="p-form-button">Recuerda incluir un titulo para tu charla </i></p>
-                <button class="section_form_button">Enviar</button>
+                <a href="#"><button class="section_form_button">Enviar</button></a>
             </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="tickets">
 
         <ul class="footer_ul">
             <li><a href="#">Preguntas frecuentes</a></li>
