@@ -57,7 +57,6 @@ section[id] {
     width: 100%;
 }
 
-
 .menu-hamburgesa-ul li a {
     color: rgba(255, 255, 255, 0.55);
 
@@ -149,7 +148,7 @@ section[id] {
 }
 
 .section_portada_img {
-    background: url(/src/public/img/ba1.jpg);
+    background: url(/src/public/img/portada/ba1.jpg);
     height: 100%;
     width: 100%;
     justify-content: end;
@@ -182,7 +181,7 @@ section[id] {
     font-size: 12px;
     font-family: var(--font);
     height: 100%;
-    width: 30%;
+    width: 453px;
     color: white;
 }
 
@@ -329,7 +328,7 @@ section[id] {
 }
 
 .card_img_end {
-    background: url("/src/public/img/honolulu.jpg");
+    background: url("/src/public/img/lugar/honolulu.jpg");
     width: 50%;
     justify-content: center;
     background-size: cover;
@@ -370,6 +369,7 @@ section[id] {
 .section_form_encabezado h6 {
     color: gray;
     font-size: 10px;
+    font-family: sans-serif;
 }
 
 .section_form_encabezado p {
