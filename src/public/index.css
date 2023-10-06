@@ -148,7 +148,7 @@ section[id] {
 }
 
 .section_portada_img {
-    background: url(/src/public/img/portada/ba1.jpg);
+    background: url('src/public/img/portada/ba1.jpg');
     height: 100%;
     width: 100%;
     justify-content: end;
@@ -328,7 +328,7 @@ section[id] {
 }
 
 .card_img_end {
-    background: url("/src/public/img/lugar/honolulu.jpg");
+    background: url("src/public/img/lugar/honolulu.jpg");
     width: 50%;
     justify-content: center;
     background-size: cover;
