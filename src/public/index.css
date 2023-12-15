@@ -248,10 +248,13 @@ section[id] {
     color: gray
 }
 
-.cards {
+#cards {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 95%;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto;
+
 }
 
 .card {
@@ -260,6 +263,7 @@ section[id] {
     border-radius: 3px;
     height: 100%;
     width: 350px;
+    min-width: 200px;
 }
 
 .card_img {
@@ -409,6 +413,7 @@ section[id] {
     background-color: rgb(28, 54, 67);
     background: linear-gradient(90deg, rgba(28, 54, 67, 1) 0%, rgba(30, 83, 113, 1) 100%);
     height: 65px;
+
 }
 
 .footer_ul {
@@ -445,7 +450,7 @@ section[id] {
 @media (max-width: 775px) {
 
 
-    .cards {
+    #cards {
         display: flex;
         flex-direction: column;
         width: 100%;

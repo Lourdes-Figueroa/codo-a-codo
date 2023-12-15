@@ -73,7 +73,7 @@
                 <p>conoce a los</p>
                 <h3>ORADORES</h3>
             </div>
-            <div class="cards">
+            <div id="cards">
                 <div class="card">
                     <img class="card_img" src="src/public/img/oradores/steve.jpg" alt="" />
                     <div class="card_detalle">
@@ -139,7 +139,6 @@
                 </div>
         </section>
         <section class="section_form_container" id="orador">
-
             <div class="col-6">
                 <div class="section_form_encabezado ">
                     <h6>CONVIÉRTETE EN UN ORADOR</h6>
@@ -152,19 +151,27 @@
 
 
                     <div class=" col-12 ">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                     </div>
                     <div class=" col-12">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="d-flex col-6">
+                    <div class=" col-12">
+                        <input type="text" class="form-control" id="tema" name="tema" placeholder="Tema">
+                    </div>
+                    <div class=" col-12">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Sobre qué quieres hablar?"></textarea>
+                    <label for="tema_desarrollo" class="form-label"></label>
+                    <textarea class="form-control" id="tema_desarrollo" rows="3" placeholder="Sobre qué quieres hablar?"
+                        name="tema_desarrollo"></textarea>
                 </div>
                 <p class="p-form-button">Recuerda incluir un titulo para tu charla </i></p>
-                <a href="#"><button class="section_form_button">Enviar</button></a>
+                <button class="section_form_button" id="enviar" type="button">Enviar</button>
             </div>
             </div>
         </section>
@@ -183,6 +190,7 @@
     </footer>
 
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/public/index.js"></script>
 </body>
 
 </html>
